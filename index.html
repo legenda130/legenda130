@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Викмак ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ff9ecb,#ffd8e8,#ffeef6);
+    color:#333;
+    overflow-x:hidden;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2));
+}
+
+header h1{
+    font-size:70px;
+    color:white;
+    text-shadow:0 0 20px hotpink;
+    animation:fade 2s;
+}
+
+header p{
+    margin-top:20px;
+    font-size:24px;
+    color:white;
+    max-width:700px;
+}
+
+.btn{
+    margin-top:40px;
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    background:white;
+    color:#ff4f9d;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px white;
+}
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 0;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    padding:35px;
+    margin-bottom:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.card h2{
+    color:#ff4f9d;
+    margin-bottom:20px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.photo{
+    height:320px;
+    border:3px dashed hotpink;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#ff4f9d;
+    font-size:22px;
+    background:#fff7fb;
+    overflow:hidden;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:white;
+    font-size:18px;
+}
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.heart{
+    position:absolute;
+    color:#ff4f9d;
+    animation:float 8s linear infinite;
+    opacity:.6;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hearts">
+<span class="heart" style="left:10%;font-size:25px;animation-delay:0s;">❤</span>
+<span class="heart" style="left:30%;font-size:35px;animation-delay:2s;">❤</span>
+<span class="heart" style="left:50%;font-size:20px;animation-delay:4s;">❤</span>
+<span class="heart" style="left:70%;font-size:28px;animation-delay:1s;">❤</span>
+<span class="heart" style="left:90%;font-size:30px;animation-delay:5s;">❤</span>
+</div>
+
+<header>
+
+<h1>✨ Викмак ✨</h1>
+
+<p>
+Одна из самых замечательных девочек, которая умеет дарить хорошее настроение,
+улыбки и позитив всем вокруг.
+</p>
+
+<button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+Узнать больше
+</button>
+
+</header>
+
+<section id="about">
+
+<div class="card">
+
+<h2>💖 Кто такая Викмак?</h2>
+
+<p style="font-size:20px;line-height:1.8;">
+Викмак — это человек, рядом с которым становится теплее.
+Она добрая, весёлая, отзывчивая и умеет поддержать в нужный момент.
+Её улыбка делает день ярче, а чувство юмора заставляет смеяться даже в самые
+обычные моменты.
+
+Она умеет вдохновлять окружающих, ценит своих друзей и всегда остаётся собой.
+Именно поэтому многие считают её очень классным человеком.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⭐ Почему Викмак такая крутая?</h2>
+
+<ul style="font-size:20px;line-height:2;">
+<li>🌸 Очень добрая.</li>
+<li>😄 Всегда поднимает настроение.</li>
+<li>💖 Заботится о друзьях.</li>
+<li>✨ Умеет делать обычные дни особенными.</li>
+<li>🌟 Просто классный человек.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📸 Галерея</h2>
+
+<div class="gallery">
+
+<div class="photo">
+<!-- Вместо src="" вставь свою фотографию -->
+<img src="IMG_3640.PNG" alt="">
+<span></span>
+</div>
+
+<div class="photo">
+<img src="IMG_3265.PNG" alt="">
+<span></span>
+</div>
+
+<div class="photo">
+<img src="IMG_6165.PNG" alt="">
+<span></span>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>❤️ Небольшое послание</h2>
+
+<p style="font-size:20px;line-height:1.8;">
+Пусть у Викмак всегда будет много счастливых моментов,
+ярких впечатлений, улыбок и исполнения всех желаний.
+Таких людей хочется ценить, ведь именно они делают этот мир немного лучше.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+Сделано с ❤️ специально для Викмак
+</footer>
+
+</body>
+</html>">
